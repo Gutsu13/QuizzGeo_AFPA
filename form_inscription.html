@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quizz Geographique</title> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="form_inscription.js"></script>   
+	</head>
+	<body>
+		<header>
+        <img src="images/bandeau.jpg" height="200px" width="100%" />
+        </header>
+        <nav>
+            <div class="navi">
+                <a class="navi2" href="accueil.html">Accueil</a>
+                <!--<a class="navi2" href="#">Tableau des Scores du Jour</a>-->
+                <a class="navi2" href="scores.html">Tableau des Scores</a> 
+                <a href="form_inscription.html">Inscription</a>
+                <a href="#">connexion</a>  
+            </div>      
+        </nav>
+        <main>
+            <aside>
+                <ul>
+                    <li class="souligne">TOP 3 Général :</li><br> <!--Code concernant les 3 meilleurs joueurs Général-->
+                    <li class="plusgras">N°1 :</li>
+                    <li class="gras">N°2 :</li>
+                    <li>N°3 :</li><br>
+                    <li>------------------------</li><br>
+                    <li class="souligne">TOP 3 du Jour :</li><br> <!--Code concernant les 3 meilleurs joueurs du jour-->
+                    <li class="plusgras">N°1 :</li>
+                    <li class="gras">N°2 :</li>
+                    <li>N°3 :</li><br>
+                    <li>------------------------</li><br>
+                    <li class="souligne">Dernier Utilisateur : </li><br>
+                    <li>MR xxx</li> <!--Code concernant le dernier utilisateur-->
+                </ul>
+            </aside>
+            <article>
+                <h1>Bienvenue dans le formulaire d'inscription</h1>
+                <p>Ca y est vous avez fait le grand saut ! Vous êtes sur le point de vous inscrire, 
+                encore quelques minutes avant de vous mesurer à notre quiz et vous classer parmis tous les joueurs.</p><br>
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+                Nom : <input type="text" name="nom" placeholder="Votre Nom" id="nom" required />
+                Prenom : <input type="text" name="prenom" placeholder="Votre Prénom" id="prenom" required /><br><br>
+                Age : <input type="number" name="age" min="16" max="99" id="age" required> ans</input><br><br>
+                E-mail : <input type="email" name="email" id="email" required /><br><br>
+                <input type="submit" name="submit" value="Envoyer" id="sub" onclick="estCorrect(document.getElementById('email'),document.getElementById('nom'),document.getElementById('nom'),document.getElementById('age'))" />
+                
+                </form>
+            </article>
+        </main>
+	</body>
+</html>
